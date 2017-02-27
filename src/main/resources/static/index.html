@@ -10,14 +10,17 @@
 </style>
 </head>
 
+<!-- ng-app="hello" => JavaScript module is defined and Angular will recognise it as an app called "hello". -->
 <body ng-app="hello">
 	<div class="container">
 		<h1>Greeting</h1>
 		<div ng-controller="home as home" ng-cloak class="ng-cloak">
+<!-- 		The following fields are being defined with handlebars -->
 			<p>The ID is {{home.greeting.id}}</p>
 			<p>The content is {{home.greeting.content}}</p>
 		</div>
 	</div>
+<!-- 	Angular JS and  Bootstrap are included at the bottom of the <body> so that the browser can process all the HTML before it gets processed -->
 	<script src="js/angular-bootstrap.js" type="text/javascript"></script>
 	<script src="js/hello.js"></script>
 </body>

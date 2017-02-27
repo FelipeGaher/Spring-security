@@ -16,7 +16,9 @@ public class SpringSecurityApplication {
 	  @RequestMapping("/resource")
 	  public Map<String,Object> home() {
 	    Map<String,Object> model = new HashMap<String,Object>();
+	    //creates and adds to id an immutable universally unique identifier 
 	    model.put("id", UUID.randomUUID().toString());
+	    //add "Hello World" to the content field
 	    model.put("content", "Hello World");
 	    return model;
 	  }
